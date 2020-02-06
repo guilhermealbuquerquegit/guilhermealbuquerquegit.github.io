@@ -9,7 +9,7 @@ let arquivos = [
 ]
 self.addEventListener("install", function(){
     console.log("Instalou")
-},)
+})
 self.addEventListener("activate", function(){
     caches.open("ceep-arquivos-" + versao).then(cache => {
         cache.addAll(arquivos)
